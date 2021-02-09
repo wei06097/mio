@@ -1,0 +1,169 @@
+<!DICTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"content="width=device-width,initial-scale=0.8,maximum-scale=1.2,minimum-scale=0.8,user-scalable=yes"/>
+	<title>Mio</title>
+	<link href="htm/style.css" rel="stylesheet" type="text/css" media="all" />
+	<audio id="usermusic" autoplay="true" loop="loop" preload="auto";>
+		<source src="./mid/pekora.mp3">
+	</audio>
+	<script type="text/javascript" src="htm/function.js"></script>
+</head>
+<!------------------------------------------------------------------------------------->
+<body onload="init();" onresize="detectScr();">
+	<img id="pekora" src="./img/pekora.gif"/>
+	<img id="ground-pound" src="./img/ame-ground-pound.gif"/>
+	<table class="site-title">
+		<tr><td class="logo" onclick=toggle();>
+			IDIOT
+		</td><td class="slogan">
+			Let's Ground Pound Your Mom
+		</td></tr>
+	</table>
+<!------------------------------------------------------------------------------------->
+	<table class="site-page">
+	<tr>
+		<td id="site-page-td1">
+		<div id="menu-div">
+		<table class="site-menu">
+			<tr><td class="menu" onclick=relocate("htm/idiot/idiot.html");>
+				回首頁
+			</td></tr>
+			<tr><td class="menu" onclick= load("mid");>
+				換音樂
+			</td></tr>
+			<tr><td class="menu" onclick= load("img");>
+				換圖片
+			</td></tr>
+<!------------------------------------------------------------------------------------->
+			<tr><td class="menu" style="border-bottom:0px;" onclick=expand("a");>
+				選單開合測試1
+			</td></tr>
+			<tr><td id="menu-big-a">
+				<table class="menu-lister">
+					<tr><td class="menu-list" onclick= load("dom");>iframe測試1</td></tr>
+					<tr><td class="menu-list" onclick= load("self");>iframe測試2</td></tr>
+				</table>
+			</td></tr>
+
+			<tr><td class="menu" style="border-bottom:0px;" onclick=expand("b");>
+				選單開合測試2
+			</td></tr>
+			<tr><td id="menu-big-b">
+				<table class="menu-lister">
+					<tr><td class="menu-list">清單1</td></tr>
+					<tr><td class="menu-list">清單2</td></tr>
+				</table>
+			</td></tr>
+<!------------------------------------------------------------------------------------->
+			<tr><td class="menu">
+				M
+			</td></tr>
+			<tr><td class="menu">
+				e
+			</td></tr>
+			<tr><td class="menu">
+				n
+			</td></tr>
+			<tr><td class="menu">
+				u
+			</td></tr>
+			<tr><td class="menu">
+				的
+			</td></tr>
+			<tr><td class="menu">
+				o
+			</td></tr>
+			<tr><td class="menu">
+				v
+			</td></tr>
+			<tr><td class="menu">
+				e
+			</td></tr>
+			<tr><td class="menu">
+				r
+			</td></tr>
+			<tr><td class="menu">
+				f
+			</td></tr>
+			<tr><td class="menu">
+				l
+			</td></tr>
+			<tr><td class="menu">
+				o
+			</td></tr>
+			<tr><td class="menu">
+				w
+			</td></tr>
+			<tr><td class="menu">
+				測
+			</td></tr>
+			<tr><td class="menu">
+				試
+			</td></tr>
+<!--33---------------------------------------------------------------------------------33-->
+			<tr><td class="therest">
+			</td></tr>
+		</table>
+		</div>
+		</td>
+<!------------------------------------------------------------------------------------->
+		<td class="site-page-td2">
+		<table class="site-content">
+			<tr><td>
+			<div id="musiclist">
+				<table style="padding:3px;margin:0px;"><tr style="height:10%">
+				<td>
+					<button style="width:100px;height:40px;" onclick=voldown();>音量下降</button>
+				</td>
+				<td>
+					<button style="width:100px;height:40px;" onclick=volup();>  音量提升</button>
+				</td>
+				<td style="width:100px;font-size:20px;">
+					<span id="volpasent">100%</span>
+				</td>
+				</tr></table>
+
+				<ul>
+				<li onclick=NoMusic();>
+					<span><b>不要音樂</b></span></li></p>
+				<li onclick=getMusic("pekora");>
+					pekora</li></p>
+				<li onclick=getMusic("ロキ");>
+					ロキ</li></p>
+				<li onclick=getMusic("天ノ弱");>
+					天ノ弱</li></p>
+				<li onclick=getMusic("ロストワンの号哭");>
+					ロストワンの号哭</li></p>
+				<li onclick=getMusic("六兆年と一夜物語");>
+					六兆年と一夜物語</li></p>
+				</ul>
+			</div>
+			
+			</td><td>
+			<div id="piclist">
+				<ul>
+				<li onclick=NoPicture();>
+					<b>不要圖片</b></li></p>
+				<li onclick=getPicture("pekora");>
+					Pekora</li></p>
+				<li onclick=getPicture("ground-pound");>
+					Ame</li></p>
+				</ul>
+			</div>
+		
+			</td><td>
+			<div id="iframe-a">
+				<iframe id="content" 
+				src="" frameborder="0" scrolling-x="hidden"> 
+				</iframe>
+			</div>
+			</td></tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+<!------------------------------------------------------------------------------------->
+</body>
+</html>

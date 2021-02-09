@@ -1,0 +1,202 @@
+/*-----------------------------------------標籤---*/
+
+body{
+	margin:0px;
+	background-color:#c9d0ff;
+}
+
+/*-----------------------------------------gif---*/
+
+img#pekora{
+	position:fixed; left:-50px; bottom:0px;
+	display:none; 
+	z-index: 1;
+}
+img#ground-pound{
+	width:200px;
+	position:fixed;right:0px; bottom:0px;
+	display:block; 
+	z-index: 1;
+}
+
+/*-----------------------------------------list---*/
+
+div#musiclist{
+	width:90%;height:90%;
+	padding:3px;margin:0px auto;
+	//border:1px solid #000;
+	//background-color:#ffffff;
+	display:none;
+	font-size:25px;
+	text-align:left;
+}
+div#piclist{
+	width:90%;height:90%;
+	padding:3px;margin:0px auto;
+	//border:1px solid #000;
+	//background-color:#ffffff;
+	display:none;
+	font-size:25px;
+	text-align:left;
+}
+
+/*-----------------------------------------iframe設定---*/
+
+div#iframe-a{
+	width:90%;height:90%;
+	padding:3px;margin:0px auto;
+	border:1px solid #000;
+	//background-color:#ff00ff;
+	display:block;
+}
+iframe#content{
+	width:100%;height:100%;
+	padding:0px;margin:0px;
+}
+
+/*-----------------------------------------Global表格---*/
+
+table.site-title{ 
+	width:100vw;height:10vh;
+	padding:0px;margin:0px;
+	//border:2px solid #000;
+	font-family: 微軟正黑體;
+	font-size:16px;
+	text-align:center;
+	border-collapse:collapse;
+	table-layout: fixed;
+}
+table.site-page{
+	width:100vw;height:90vh;
+	padding:0px;margin:0px;
+	//border:2px solid #000; 
+	font-family: 微軟正黑體;
+	font-size:16px; 
+	text-align:center;
+	border-collapse:collapse;
+	table-layout: fixed;
+}
+
+/*-----------------------------------------(site-title)td設定---*/
+
+.logo{
+	width:144px;
+	padding:3px;margin:0px;
+	font-size:35px;
+	text-align:center;
+	color: white;
+	background-color:#5d4325;
+	/*
+	line-height:175%;
+	text-indent:0em;
+	letter-spacing:1px;
+	*/
+}
+.slogan{
+	width:auto;
+	padding:3px;margin:0px;
+	font-size:35px;
+	text-align:center;
+	color:black;
+	background-color:#0956a3;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/*-----------------------------------------(site-page)td設定---*/
+
+td#site-page-td1{
+	width:150px;
+	padding:0px;margin:0px;
+}
+td.site-page-td2{
+	width:auto;
+	padding:0px;margin:0px;
+}
+
+/*-----------------------------------------Content表格---*/
+
+div#menu-div{
+	width:100%;height:100%;
+	padding:0px;margin:0px;
+	display:block;
+}
+table.site-menu{
+	width:100%;height:90vh;
+	padding:0px;margin:0px;
+	//border:2px solid #000; 
+	font-family: 微軟正黑體;
+	font-size:16px; 
+	text-align:left;
+	border-collapse:collapse;
+	background-color:#888888;
+	display:block;
+	overflow-y:scroll;
+}
+table.site-content{
+	width:100%;height:100%;
+	padding:0px;margin:0px;
+	//border:2px solid #000;
+	font-family: 微軟正黑體;
+	font-size:16px; 
+	text-align:center;
+	border-collapse:collapse;
+	//background-color:#888888;
+}
+
+/*-----------------------------------------(site-menu)td設定---*/
+
+td.menu{
+	height:6vh;
+	padding:10px;margin:0px;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+td.therest{
+	padding:0px;margin:0px;
+	background-color:#aaaaaa;
+}
+/* tr:nth-child(odd){} */
+
+/*-----------------------------------------表格展開---*/
+
+td#menu-big-a{
+	width:100%;height:auto;
+	padding:0px;margin:0px;
+	display:none;
+}
+td#menu-big-b{
+	width:100%;height:auto;
+	padding:0px;margin:0px;
+	display:none;
+}
+table.menu-lister{
+	width:100%;height:100%;
+	padding:0px;margin:0px;
+	border:3px solid #888888; 
+	border-bottom:10px solid #888888;
+	background-color:#3d6648;
+	font-family: 微軟正黑體;
+	font-size:15px;
+	text-align:left;
+	border-collapse:collapse;
+	table-layout: fixed;
+}
+td.menu-list{
+	width:100%;height:100%;
+	padding:5px;margin:0px;
+	border:3px solid #888888;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/*-----------------------------------------液態網頁---*/
+
+@media (max-width:600px){
+	/*
+	td#site-page-td1{width:0px;}
+	div#menu-div{display:none;}
+	*/
+}
