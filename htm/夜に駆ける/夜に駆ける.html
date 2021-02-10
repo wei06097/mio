@@ -6,13 +6,18 @@
 	<title>夜に駆ける</title>
 	<link href="ruby.css" rel="stylesheet" type="text/css" media="all" />
 	<script type="text/javascript">
+		function detect(){
+			var resize=document.getElementById("limit");
+			if(document.body.clientWidth<document.body.clientHeight){
+				resize.style="width:90vw; height:calc((width:90vw*9)/16);";
+			}
+			if(document.body.clientWidth>document.body.clientHeight){
+				resize.style="width:60vw; height:calc((width:60vw*9)/16);";
+			}
+		}
 	</script>
 </head>
-<body>
-<!---------------------------------------------------------------------------------------->
-
-
-
+<body onload="detect();" onresize="detect();">
 <!---------------------------------------------------------------------------------------->
 <table class="song">
 	<tr><td class="name">
@@ -20,7 +25,7 @@
 		<ruby><rb>夜</rb><rt>よる</rt></ruby>に<ruby><rb>駆</rb><rt>か</rt></ruby>ける - YOASOBI</div>
 	</td></tr>
 	<tr><td class="video">
-		<div class="limit">
+		<div id="limit">
 		<iframe id="vid" src="https://www.youtube.com/embed/x8VYWazR5mE"allowFullScreen="true">
 		</iframe>
 		</div>
@@ -28,9 +33,8 @@
 	<tr><td class="ly">
 		<span>歌詞</span>
 	</td></tr>
-	<tr><td style="padding:10px;margin:0px auto;">
-		<div class="line"></div>
-  <ul>
+	<tr><td class="lyc">
+    <ul>
     <li class="line" style="border-top:0px;">
     <li lang="ja" class="li1"><span class="LyricsYomi" PK="636789" sn="0" st="00:00:01.000"><ruby><rb>沈</rb><rt>しず</rt></ruby>むように<ruby><rb>溶</rb><rt>と</rt></ruby>けてゆくように</span><span class="LyricsYomiKana" PK="636789" style="display:none;">しずむようにとけてゆくように</span></li>
     <li class="li2"><span class="Translate_zh" PK="636789">像是沉溺般 又像是離去般</span></li>
