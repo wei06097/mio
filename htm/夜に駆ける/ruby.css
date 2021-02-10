@@ -15,7 +15,6 @@ rtc > rt[rbspan] { display: table-caption; }
 rp { display: none; }
 }
 
-
 table.song{
 	border:1px solid #000000;
 	padding:0px;margin:0px auto;
@@ -24,18 +23,18 @@ td.name{
 	padding:10px;margin:0px auto;
 	border-bottom:1px solid #000000;
 }
-div.limit{
-	padding:0px;margin:0px auto;
-	width:60vw;height:calc((60vw*10)/16);
-	overflow: hidden;
-}
-.limit iframe{
-	width: 100%;
-	height: 100%;
-}
 td.video{
 	padding:0px;margin:0px auto;
 	border-bottom:1px solid #000000;
+}
+div#limit{
+	padding:0px;margin:0px auto;
+	width:60vw;height:calc((60vw*9)/16);
+	overflow: hidden;
+}
+#limit iframe{
+	width: 100%;
+	height: 100%;
 }
 td.ly{
 	font-size:25px;
@@ -43,19 +42,18 @@ td.ly{
 	padding:10px;margin:0px auto;
 	border-bottom:1px solid #000000;
 }
-
+td.lyc{
+	padding:0px;margin:0px auto;
+}
 /*------------------------------------------------------*/
-
+ul{
+	padding:0px;margin:0px auto;
+}
 li{
-	width:500px;height:40px;	
+	width:100%;height:5vh;
 	list-style-type:none;
+	text-indent:3em;
 }
 li.line{
 	border-top:1px dashed black;
 }
-			
-/*
-@media (max-width:600px){
-	#vid{width:400px;height:300px;}
-}
-*/
