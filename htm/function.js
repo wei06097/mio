@@ -1,4 +1,4 @@
-alert("welcome");
+//alert("welcome");
 //--------------------------------------------------------------------------載入
 
 var counter=1;
@@ -49,8 +49,9 @@ function iframeChange(name){
 }
 function load(page){
 	var vis = document.getElementById("iframe-a");
+	var vis_td = document.getElementById("iframe-a"+"-td");
 	vis.style="display:none";
-	page.src="htm/" + name + "/" + name + ".html" ;
+	vis_td.style="display:none";
 	if(page=="mid"){
 		changelist(ListType.mid);
 	}
@@ -60,13 +61,14 @@ function load(page){
 	else{
 		listoffall();
 		vis.style="display:block";
+		vis_td.style="display:block";
 		iframeChange(page);
 	}
 }
 
 //--------------------------------------------------------------------------Homepage
 
-function relocate(pagename,tdx){
+function relocate(pagename){
 	document.location=pagename;//網頁跳轉
 }
 
@@ -91,11 +93,15 @@ function listoffall(){    //刪掉所有清單
 }
 function liston(ListId){  //顯示指定清單
 	var list=document.getElementById(ListId);
+	var list_td=document.getElementById(ListId+"-td");
 	list.style="display:block";
+	list_td.style="display:block";
 }
 function listoff(ListId){ //關閉指定清單
 	var list=document.getElementById(ListId);
+	var list_td=document.getElementById(ListId+"-td");
 	list.style="display:none";
+	list_td.style="display:none";
 }
 
 //---------------------------------------------------------------------------music控制
