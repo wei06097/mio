@@ -7,26 +7,29 @@
 	<link href="ruby.css" rel="stylesheet" type="text/css" media="all" />
 	<script type="text/javascript">
 		function detect(){
-			var resize=document.getElementById("limit");
+			var videotd=document.getElementById("video");
+			var videotb=document.getElementById("song");
 			if(document.body.clientWidth<document.body.clientHeight){
-				resize.style="width:90vw; height:calc((width:90vw*9)/16);";
+				videotd.style="width:90vw; height:calc(calc(90vw * 9) / 16);";
+				videotb.style="width:90vw;";
 			}
 			if(document.body.clientWidth>document.body.clientHeight){
-				resize.style="width:60vw; height:calc((width:60vw*9)/16);";
+				videotd.style="width:60vw; height:calc(calc(60vw * 9) / 16);";
+				videotb.style="width:60vw;";
 			}
 		}
 	</script>
 </head>
 <body onload="detect();" onresize="detect();">
 <!---------------------------------------------------------------------------------------->
-<table class="song">
+<table id="song">
 	<tr><td class="name">
 		<div lang="ja" style="font-size:1.8em;width:95%;color:#333;text-align:center;padding:10px;">
 		<ruby><rb>夜</rb><rt>よる</rt></ruby>に<ruby><rb>駆</rb><rt>か</rt></ruby>ける - YOASOBI</div>
 	</td></tr>
-	<tr><td class="video">
-		<div id="limit">
-		<iframe id="vid" src="https://www.youtube.com/embed/x8VYWazR5mE"allowFullScreen="true">
+	<tr><td id="video">
+		<div class="limit">
+		<iframe src="https://www.youtube.com/embed/x8VYWazR5mE"allowFullScreen="true">
 		</iframe>
 		</div>
 	</td></tr>
