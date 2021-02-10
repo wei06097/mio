@@ -43,15 +43,33 @@ div#piclist{
 /*-----------------------------------------iframe設定---*/
 
 div#iframe-a{
-	width:90%;height:90%;
-	padding:3px;margin:0px auto;
-	border:1px solid #000;
+	width:100%;height:100%;
+	padding:0px;margin:0px;
+	//border:1px solid #000;
 	//background-color:#ff00ff;
 	display:block;
 }
 iframe#content{
 	width:100%;height:100%;
 	padding:0px;margin:0px;
+}
+
+/*-----------------------------------------td---*/
+
+td#musiclist-td{
+	width:100%;height:100%;
+	padding:0px;margin:0px;
+	display:none;
+}
+td#piclist-td{
+	width:100%;height:100%;
+	padding:0px;margin:0px;
+	display:none;
+}
+td#iframe-a-td{
+	width:100%;height:100%;
+	padding:0px;margin:0px;
+	display:block;
 }
 
 /*-----------------------------------------Global表格---*/
@@ -148,12 +166,13 @@ table.site-content{
 /*-----------------------------------------(site-menu)td設定---*/
 
 td.menu{
-	height:6vh;
+	width:200px;height:6vh;
 	padding:10px;margin:0px;
 	border-top:1px solid #000;
 	border-bottom:1px solid #000;
 }
 td.therest{
+	width:200px;height:auto;
 	padding:0px;margin:0px;
 	background-color:#aaaaaa;
 }
