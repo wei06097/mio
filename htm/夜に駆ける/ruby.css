@@ -1,0 +1,28 @@
+/*
+ruby {display: inline-flex;flex-direction: column-reverse;text-align: center;}
+ruby > rb,ruby > rt {display: inline;line-height: 1.2;}
+ruby > rt {font-size:66%;}
+*/
+
+ruby rt {font-size:62.5%;margin:0;line-height:80%;}
+
+@media screen and (min-width: 790px) {
+ruby { display: inline-table; text-align: center; white-space: nowrap; text-indent: 0; margin: 0; vertical-align: text-bottom; }
+ruby > rb, ruby > rbc { display: table-row-group; }
+ruby > rt, ruby > rbc + rtc { display: table-header-group; font-size: 60%; line-height: 100%; letter-spacing: 0;text-align:center; }
+ruby > rbc + rtc + rtc { display: table-footer-group; font-size: 60%; line-height: 90%; letter-spacing: 0; }
+rtc > rt[rbspan] { display: table-caption; }
+rp { display: none; }
+}
+
+
+li{
+	width:500px;height:40px;	
+	list-style-type:none;
+}
+div.ja{
+	
+}	
+li.line{
+	border-top:1px dashed black;
+}
