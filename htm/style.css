@@ -172,7 +172,7 @@ td.menu{
 	border-bottom:1px solid #000;
 }
 td.therest{
-	width:200px;height:6vh;
+	width:200px;height:auto;
 	padding:0px;margin:0px;
 	border-top:1px solid #000;
 	background-color:#aaaaaa;
