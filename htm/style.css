@@ -174,6 +174,7 @@ td.menu{
 td.therest{
 	width:200px;height:auto;
 	padding:0px;margin:0px;
+	border-top:1px solid #000;
 	background-color:#aaaaaa;
 }
 /* tr:nth-child(odd){} */
