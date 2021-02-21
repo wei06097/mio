@@ -1,0 +1,84 @@
+/*-------------------------------------------------------框架*/
+table#song{
+	width:60vw;
+	border:1px solid #000000;
+	padding:0px;margin:0px auto;
+}
+td#name-td{
+	padding:10px;margin:0px auto;
+	border-bottom:1px solid #000000;
+}
+td#video{
+	width:60vw;height:calc(calc(60vw * 9) / 16);
+	padding:0px;margin:0px auto;
+	border-bottom:1px solid #000000;
+}
+td.ly{
+	font-size:25px;
+	text-align:center;
+	padding:10px;margin:0px auto;
+	border-bottom:1px solid #000000;
+}
+td.lyc{
+	padding:0px;margin:0px auto;
+}
+/*-------------------------------------------------------標題*/
+div#title{
+	font-size:1.8em;
+	width:95%;
+	color:#333;
+	text-align:center;
+	padding:10px;
+}
+/*-------------------------------------------------------歌詞風格*/
+ul{
+	padding:5px;margin:5px auto;
+}
+.LYct{
+	width:90%;height:auto;
+	padding:5px;margin:5px auto;
+	border:1px solid #000;
+}
+li{
+	width:90%;height:auto;
+	padding:5px; margin:5px auto;
+	list-style-type:none;
+}
+/*-------------------------------------------------------客製化風格*/
+.small{
+	display:block;
+}
+.jp{
+	display:block;
+}
+.yo{
+	display:none;
+}
+.cn{
+	display:block;
+}
+/*-------------------------------------------------------客製化按鈕*/
+#jpcly{
+	display:none;margin:0px auto;
+	background-color:#aaaaaa;
+}
+#jply{
+	display:none;margin:0px auto;
+	background-color:#aaaaaa;
+}
+#jpply{
+	display:none;margin:0px auto;
+	background-color:#666666;
+}
+#cnly{
+	display:none;margin:0px auto;
+	background-color:#aaaaaa;
+}
+/*-------------------------------------------------------影片進度按鈕*/
+.play{
+	position:relative;left:80%;
+}
+.pause{
+	position:relative;left:80%;	
+}
+/*-------------------------------------------------------*/
